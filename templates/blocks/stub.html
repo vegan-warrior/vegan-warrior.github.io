@@ -1,0 +1,17 @@
+{% if stub %}
+<header class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3">{{ stub.title }}</h1>
+                    <p class="lead fw-normal text-muted mb-4">{{ stub.text }}</p>
+                    {% for b in stub.buttons %}
+                        <a class="btn btn-primary btn-lg m-1" href="{{ b.link }}">{{ b.label }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{% endif %}
