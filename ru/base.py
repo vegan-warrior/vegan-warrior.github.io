@@ -1,10 +1,10 @@
 navbar_logo_link = '/ru'
 navbar_items = (
     {'label': 'Главная', 'link': '/ru'},
-    {'label': 'Фильмы', 'link': 'films.html'},
-    {'label': 'Книги', 'link': 'books.html'},
-    {'label': 'Приложения', 'link': 'apps.html'},
-    {'label': 'Статистика', 'link': 'stat.html'},
+    {'label': 'Фильмы', 'link': '/ru/films.html'},
+    {'label': 'Книги', 'link': '/ru/books.html'},
+    {'label': 'Приложения', 'link': '/ru/apps.html'},
+    {'label': 'Статистика', 'link': '/ru/stat.html'},
 )
 
 lang_current = 'Русский'

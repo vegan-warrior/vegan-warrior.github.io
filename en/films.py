@@ -118,4 +118,10 @@ cards = (
      'preview': '../templates/assets/forksoverknives.png',
      'description': "What if one simple change could save you from chronic diseases such as diabetes and heart disease? Take a deep dive into the plant-based diet documentary that has influenced millions around the world.",
     },
+    {'title': 'Land of hope and glory',
+     'subtitle': '2017',
+     'link': 'https://www.landofhopeandglory.org/',
+     'preview': '../templates/assets/landofhope.jpg',
+     'description': "Documentary about the hidden truth behind UK animal farming.",
+    },
 )
