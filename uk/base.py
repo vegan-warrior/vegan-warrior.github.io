@@ -1,3 +1,4 @@
+parenting = '..'
 navbar_logo_link = '/uk'
 navbar_items = (
     {'label': 'Головна', 'link': '/uk'},

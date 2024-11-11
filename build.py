@@ -2,13 +2,24 @@ import shutil
 from pathlib import Path
 from importlib import import_module
 
+import markdown
 from jinja2 import Environment, FileSystemLoader
 
 import config as CFG
 
 
+def markdown_to_html(md):
+    res = markdown.markdown(md)
+    res = res.replace('<h1>', '<h1 class="mt-5 mb-4">')
+    res = res.replace('<h2>', '<h2 class="mt-4 mb-3">')
+    res = res.replace('<h3>', '<h3 class="mt-4 mb-3">')
+    res = res.replace('<img ', '<img width="100%" ')
+    return res
+
+
 BASEDIR = Path(__file__).resolve().parent
 JINJAENV = Environment(loader=FileSystemLoader(BASEDIR / 'templates'))
+JINJAENV.filters['markdown'] = markdown_to_html
 
 SITEMAP_BASE_TMPL = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">{}
@@ -19,6 +30,10 @@ SITEMAP_URL_TMPL = '''
     <changefreq>monthly</changefreq>
     <priority>{priority}</priority>
   </url>'''
+
+
+def import_path(path):
+    return import_module(path.replace('/', '.'))
 
 
 def get_vars(module):
@@ -46,7 +61,7 @@ def make_sitemap():
     for lang in CFG.languages:
         xml_urls.append(_make_xml_url(f'/{lang}', '1.0'))
 
-        base = import_module(f'{lang}.base')
+        base = import_path(f'{lang}/base')
         for item in base.navbar_items[1:]:
             xml_urls.append(_make_xml_url(item['link'], '0.9'))
 
@@ -62,11 +77,12 @@ def render(lang, page, base):
     """
     Render one page
     """
+    print('Render', lang, page)
     template = JINJAENV.get_template(f'{page}.html')
     kwargs = get_vars(base)
 
     try:
-        module = import_module(f'{lang}.{page}')
+        module = import_path(f'{lang}/{page}')
         kwargs = {**kwargs, **get_vars(module)}
     except ModuleNotFoundError as exc:
         print('    ', exc)
@@ -81,12 +97,12 @@ def render_pages():
     for lang in CFG.languages:
         dirpath = BASEDIR / lang
         dirpath.mkdir(parents=True, exist_ok=True)
+        base = import_path(f'{lang}/base')
 
         for page in CFG.pages:
-            print('Render', lang, page)
-            base = import_module(f'{lang}.base')
-            with open(dirpath / f'{page}.html', 'w') as f:
-                f.write(render(lang, page, base))
+            path = Path(dirpath / f'{page}.html')
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(render(lang, page, base))
 
 
 if __name__ == '__main__':

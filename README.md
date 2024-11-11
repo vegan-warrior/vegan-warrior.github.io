@@ -3,7 +3,7 @@
 ## Install
 
 1. Clone
-1. `pip install Jinja2`
+1. `pip install Jinja2 markdown`
 
 ## How to build
 
