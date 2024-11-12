@@ -54,22 +54,18 @@ def _make_xml_url(url, priority):
 
 def make_sitemap():
     """
-    Find all the URLs in lang navbars and generate sitemap.xml from them
+    Generate sitemap.xml for each page
     """
     xml_urls = []
 
     for lang in CFG.languages:
         xml_urls.append(_make_xml_url(f'/{lang}', '1.0'))
-
-        base = import_path(f'{lang}/base')
-        for item in base.navbar_items[1:]:
-            xml_urls.append(_make_xml_url(item['link'], '0.9'))
+        for page in CFG.pages:
+            if page != 'index':
+                xml_urls.append(_make_xml_url(f'/{lang}/{page}.html', '0.9'))
 
     sitemap = SITEMAP_BASE_TMPL.format(''.join(xml_urls))
-
-    with open('sitemap.xml', 'w') as f:
-        f.write(sitemap)
-
+    Path(BASEDIR / 'sitemap.xml').write_text(sitemap)
     print(f'sitemap.xml generated: {len(xml_urls)} URLs')
 
 

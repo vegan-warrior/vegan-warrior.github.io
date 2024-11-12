@@ -48,11 +48,12 @@ post_content = """
 """
 
 parenting = '../..'
+html_title = 'Здоровый веганский рацион: основы'
 article = {
     'author_name': 'Настя Лисица',
     'author_meta': 'Сертифицированный нутрициолог, адепт доказательного подхода к питанию',
     'author_image': '../../templates/assets/blog/waffledeer_ava.jpg',
-    'post_title': 'Здоровый веганский рацион: основы',
+    'post_title': html_title,
     'post_meta': '12 ноября 2024',
     'post_content': post_content,
 }
