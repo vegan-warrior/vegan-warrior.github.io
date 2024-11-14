@@ -55,5 +55,6 @@ article = {
     'post_meta': '12 listopada 2024',
     'post_content': post_content,
     'cover': '../../templates/assets/blog/perehod_1.jpg',
+    'link': 'transition.html',
     'excerpt': "Zmiana sposobu odżywiania to poważne wydarzenie. To, czy weganizm stanie się najlepszą decyzją w twoim życiu, czy też rozczarowaniem, zależy od tego, jak dobrze opanujesz podstawy.",
 }

@@ -85,5 +85,6 @@ article = {
     'post_meta': '14 listopada 2024',
     'post_content': post_content,
     'cover': '../../templates/assets/blog/education_1.jpg',
-    'excerpt': "Zdaniem Leyli AbdelRahim, w warunkach antropogenicznych katastrof ekologicznych, brutalnych wojen i zagrożenia zniszczeniem samej planety, konieczne jest zbadanie tych podstawowych ontologicznych przekonań, które leżą u podstaw ludzkiej wiedzy. Uważa się, że szkoła daje wiedzę o rzeczywistości. W rzeczywistości, jak twierdzi AbdelRahim, edukacja szkolna wręcz alienuje dzieci od życia: zmusza je do myślenia w monokulturowej perspektywie, przygotowuje do zaakceptowania swoich miejsc w hierarchii ucisku, do uczestnictwa w projekcie kolonizacji środowiska, do apatii, która pozwala bezboleśnie konsumować życie innych, nie rozumiejąc ich bólu i nie reagując na niego.",
+    'link': 'education.html',
+    'excerpt': "Uważa się, że szkoła daje wiedzę o rzeczywistości. W rzeczywistości, jak twierdzi Layla AbdelRahim, edukacja szkolna wręcz alienuje dzieci od życia: przygotowuje je do uczestnictwa w projekcie kolonizacji środowiska, do apatii, która pozwala bezboleśnie konsumować życie innych, nie rozumiejąc ich bólu i nie reagując na niego.",
 }

@@ -55,5 +55,6 @@ article = {
     'post_meta': '12 ноября 2024',
     'post_content': post_content,
     'cover': '../../templates/assets/blog/perehod_1.jpg',
+    'link': 'transition.html',
     'excerpt': "Смена типа питания — ответственное событие. Окажется веганство для вас лучшим решением в жизни или разочарует, зависит от того, насколько хорошо вы разберётесь в матчасти.",
 }

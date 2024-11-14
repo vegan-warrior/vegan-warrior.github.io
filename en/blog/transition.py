@@ -53,5 +53,6 @@ article = {
     'post_meta': 'November 12, 2024',
     'post_content': post_content,
     'cover': '../../templates/assets/blog/perehod_1.jpg',
+    'link': 'transition.html',
     'excerpt': "Switching to a new diet is a significant decision. Whether veganism becomes the best choice of your life or ends up being a disappointment depends on how well you understand the foundational principles.",
 }

@@ -1,3 +1,4 @@
+import glob
 import shutil
 from pathlib import Path
 from importlib import import_module
@@ -34,6 +35,8 @@ SITEMAP_URL_TMPL = '''
 
 
 def import_path(path):
+    if path.endswith('.py'):
+        path = path[:-3]
     return import_module(path.replace('/', '.'))
 
 
@@ -70,19 +73,28 @@ def make_sitemap():
     print(f'sitemap.xml generated: {len(xml_urls)} URLs')
 
 
-def render(lang, page, base):
+def render(lang, page, base, pagecfg=None):
     """
     Render one page
     """
     print('Render', lang, page)
     template = JINJAENV.get_template(f'{page}.html')
     kwargs = get_vars(base)
+    pagecfg = pagecfg or {}
 
     try:
         module = import_path(f'{lang}/{page}')
         kwargs = {**kwargs, **get_vars(module)}
     except ModuleNotFoundError as exc:
         print('    ', exc)
+
+    # if import_dirmodules enabled, import neighbour modules under 'dirmodules' name
+    if pagecfg.get('import_dirmodules'):
+        dirmodules = {}
+        for path in sorted(glob.glob(lang + '/' + '/'.join(page.split('/')[:-1]) + '/*.py')):
+            if path != f'{lang}/{page}.py':
+                dirmodules[path[:-3].split('/')[-1]] = import_path(path)
+        kwargs['dirmodules'] = dirmodules
 
     return template.render(**kwargs)
 
@@ -96,10 +108,10 @@ def render_pages():
         dirpath.mkdir(parents=True, exist_ok=True)
         base = import_path(f'{lang}/base')
 
-        for page in CFG.pages:
+        for page, pagecfg in CFG.pages.items():
             path = Path(dirpath / f'{page}.html')
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(render(lang, page, base))
+            path.write_text(render(lang, page, base, pagecfg=pagecfg))
 
 
 if __name__ == '__main__':

@@ -85,5 +85,6 @@ article = {
     'post_meta': 'November 14, 2024',
     'post_content': post_content,
     'cover': '../../templates/assets/blog/education_1.jpg',
-    'excerpt': "According to Layla AbdelRahim, in the context of anthropogenic ecological disasters, brutal wars, and the threat of planetary destruction, it is crucial to examine the foundational ontological assumptions underlying human knowledge. It is commonly believed that schools provide knowledge about reality. However, AbdelRahim argues that formal education, in fact, alienates children from life: it forces them to think within a monocultural framework, conditions them to accept their roles within the hierarchy of oppression, prepares them to participate in the colonization of their environment, and fosters apathy that enables the consumption of others' lives without understanding or responding to their pain.",
+    'link': 'education.html',
+    'excerpt': "It is commonly believed that schools provide knowledge about reality. However, Layla AbdelRahim argues that formal education, in fact, alienates children from life: it prepares them to participate in the colonization of their environment, and fosters apathy that enables the consumption of others' lives without understanding or responding to their pain.",
 }

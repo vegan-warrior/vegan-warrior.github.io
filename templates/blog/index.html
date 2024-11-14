@@ -1,0 +1,15 @@
+{% extends 'blocks/base.html' %}
+{% block content %}
+    {% set dirmodule_values = dirmodules.values() | list %}
+
+    {% if dirmodule_values|length > 0 %}
+        {% if article_preview_head_index is defined %}
+            {% set article_preview_head = dirmodule_values[article_preview_head_index].article %}
+            {% include 'blocks/article_preview_head.html' %}
+        {% endif %}
+
+        {% set article_previews = dirmodule_values %}
+        {% include 'blocks/article_previews.html' %}
+
+    {% endif %}
+{% endblock %}
