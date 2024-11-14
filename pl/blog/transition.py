@@ -1,6 +1,4 @@
 post_content = """
-*Zmiana sposobu odżywiania to poważne wydarzenie. To, czy weganizm stanie się najlepszą decyzją w twoim życiu, czy też rozczarowaniem, zależy od tego, jak dobrze opanujesz podstawy.*
-
 Jeśli chcesz zachować i wzmocnić zdrowie po rezygnacji z produktów odzwierzęcych, zamiast nabawić się zaburzeń hormonalnych i wypadających włosów po pół roku — ten poradnik jest dla ciebie.
 
 
@@ -56,4 +54,6 @@ article = {
     'post_title': html_title,
     'post_meta': '12 listopada 2024',
     'post_content': post_content,
+    'cover': '../../templates/assets/blog/perehod_1.jpg',
+    'excerpt': "Zmiana sposobu odżywiania to poważne wydarzenie. To, czy weganizm stanie się najlepszą decyzją w twoim życiu, czy też rozczarowaniem, zależy od tego, jak dobrze opanujesz podstawy.",
 }

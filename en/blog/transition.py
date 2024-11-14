@@ -1,12 +1,8 @@
 post_content = """
-*Switching to a new diet is a significant decision. Whether veganism becomes the best choice of your life or ends up being a disappointment depends on how well you understand the foundational principles.*
-
 If you want to maintain and improve your health after eliminating animal products, rather than ending up with hormonal imbalances and hair loss in six months, this guide is for you.
 
 
 ### Step 1: Focus on Protein and Fats
-
-![Beans](../../templates/assets/blog/perehod_1.jpg)
 
 Plant-based food is carbohydrate-heavy, so it’s crucial to avoid falling into a carb trap. Protein and fats, especially during the initial phase, need to be **carefully monitored**.
 
@@ -56,4 +52,6 @@ article = {
     'post_title': html_title,
     'post_meta': 'November 12, 2024',
     'post_content': post_content,
+    'cover': '../../templates/assets/blog/perehod_1.jpg',
+    'excerpt': "Switching to a new diet is a significant decision. Whether veganism becomes the best choice of your life or ends up being a disappointment depends on how well you understand the foundational principles.",
 }

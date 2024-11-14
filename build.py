@@ -9,11 +9,12 @@ import config as CFG
 
 
 def markdown_to_html(md):
-    res = markdown.markdown(md)
+    res = markdown.markdown(md, extensions=['footnotes'])
     res = res.replace('<h1>', '<h1 class="mt-5 mb-4">')
     res = res.replace('<h2>', '<h2 class="mt-4 mb-3">')
     res = res.replace('<h3>', '<h3 class="mt-4 mb-3">')
     res = res.replace('<img ', '<img width="100%" ')
+    res = res.replace('<blockquote>', '<blockquote class="blockquote ps-3" style="border-left: solid;">')
     return res
 
 

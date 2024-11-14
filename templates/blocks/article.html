@@ -16,6 +16,8 @@
                     <h1 class="fw-bolder mb-1">{{ ar.post_title }}</h1>
                     {% if ar.post_meta %}<div class="text-muted fst-italic mb-2">{{ ar.post_meta }}</div>{% endif %}
                 </header>
+                <section class="mb-4"><i>{{ ar.excerpt|markdown|safe }}</i></section>
+                <section class="mb-4">{% if ar.cover %}<img src="{{ ar.cover }}" width="100%"/>{% endif %}</section>
                 <section class="mb-5">{{ ar.post_content|markdown|safe }}</section>
             </article>
         </div>
