@@ -4,8 +4,6 @@ Jeśli chcesz zachować i wzmocnić zdrowie po rezygnacji z produktów odzwierz�
 
 ### Krok 1: uwaga na białka i tłuszcze
 
-![Beans](../../templates/assets/blog/perehod_1.jpg)
-
 Żywność roślinna to głównie węglowodany, dlatego ważne jest, aby nie ulec pokusie nadmiernego ich spożywania. Białka i tłuszcze, przynajmniej na początku, należy skrupulatnie **liczyć**.
 
 Norma białka to 1 g na kilogram masy ciała, czyli przy wadze 60 kg dzienne zapotrzebowanie wynosi 60 g białka. Najlepsze źródła to rośliny strączkowe i pełnoziarniste zboża. Jeśli nie udaje się uzyskać odpowiedniej ilości białka z jedzenia, warto sięgnąć po białko w postaci suplementów.
@@ -50,11 +48,11 @@ html_title = 'Zdrowa dieta wegańska: podstawy'
 article = {
     'author_name': 'Nastia Lisica',
     'author_meta': 'Certyfikowany dietetyk, zwolenniczka naukowego podejścia do żywienia',
-    'author_image': '../../templates/assets/blog/waffledeer_ava.jpg',
+    'author_image': '/templates/assets/blog/waffledeer_ava.jpg',
     'post_title': html_title,
     'post_meta': '12 listopada 2024',
     'post_content': post_content,
-    'cover': '../../templates/assets/blog/perehod_1.jpg',
-    'link': 'transition.html',
+    'cover': '/templates/assets/blog/perehod_1.jpg',
+    'link': 'p00-transition.html',
     'excerpt': "Zmiana sposobu odżywiania to poważne wydarzenie. To, czy weganizm stanie się najlepszą decyzją w twoim życiu, czy też rozczarowaniem, zależy od tego, jak dobrze opanujesz podstawy.",
 }

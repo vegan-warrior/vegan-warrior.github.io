@@ -80,11 +80,11 @@ html_title = 'Освіта як одомашнення внутрішнього 
 article = {
     'author_name': 'Лейла АбдельРахім',
     'author_meta': 'Антропологиня, веганка, анархо-примітивістка',
-    'author_image': '../../templates/assets/blog/layla_ava.jpg',
+    'author_image': '/templates/assets/blog/layla_ava.jpg',
     'post_title': html_title,
     'post_meta': '14 листопада 2024',
     'post_content': post_content,
-    'cover': '../../templates/assets/blog/education_1.jpg',
-    'link': 'education.html',
+    'cover': '/templates/assets/blog/education_1.jpg',
+    'link': 'p01-education.html',
     'excerpt': "Загалом вважається, що школи надають знання про реальність. Однак Лейла АбдельРахім стверджує, що формальна освіта насправді відчужує дітей від життя: вона готує їх до участі в колонізації навколишнього середовища і сприяє розвитку апатії, яка дозволяє споживати життя інших без розуміння або реагування на їхній біль.",
 }

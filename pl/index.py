@@ -43,3 +43,9 @@ contact = {
     'follow_us': 'Śledź nas',
     'donations': 'Darowizny',
 }
+
+html_title = 'Main'
+article_previews_link_more = 'blog'
+article_previews_link_more_label = 'Więcej teorii'
+article_previews_header_large = 'Z naszego bloga'
+article_previews_header_large_sub = 'Teksty uwalniające ciało i umysł'

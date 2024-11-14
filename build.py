@@ -73,12 +73,11 @@ def make_sitemap():
     print(f'sitemap.xml generated: {len(xml_urls)} URLs')
 
 
-def render(lang, page, base, pagecfg=None):
+def read_kwargs(lang, page, pagecfg=None):
     """
-    Render one page
+    Read all the kwargs needed to render the page
     """
-    print('Render', lang, page)
-    template = JINJAENV.get_template(f'{page}.html')
+    base = import_path(f'{lang}/base')
     kwargs = get_vars(base)
     pagecfg = pagecfg or {}
 
@@ -96,6 +95,16 @@ def render(lang, page, base, pagecfg=None):
                 dirmodules[path[:-3].split('/')[-1]] = import_path(path)
         kwargs['dirmodules'] = dirmodules
 
+    # if read_other_modules_kwargs enabled, import specified modules under the specified names
+    if others := pagecfg.get('read_other_modules_kwargs'):
+        for other_name, other_path in others.items():
+            kwargs[other_name] = read_kwargs(lang, other_path, pagecfg=CFG.pages[other_path])
+
+    return kwargs
+
+
+def render(page, kwargs):
+    template = JINJAENV.get_template(f'{page}.html')
     return template.render(**kwargs)
 
 
@@ -106,12 +115,14 @@ def render_pages():
     for lang in CFG.languages:
         dirpath = BASEDIR / lang
         dirpath.mkdir(parents=True, exist_ok=True)
-        base = import_path(f'{lang}/base')
 
         for page, pagecfg in CFG.pages.items():
             path = Path(dirpath / f'{page}.html')
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(render(lang, page, base, pagecfg=pagecfg))
+            kwargs = read_kwargs(lang, page, pagecfg=pagecfg)
+
+            print('Render', lang, page)
+            path.write_text(render(page, kwargs))
 
 
 if __name__ == '__main__':

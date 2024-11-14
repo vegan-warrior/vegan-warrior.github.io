@@ -43,3 +43,9 @@ contact = {
     'follow_us': 'Слідуй за нами',
     'donations': 'Пожертви',
 }
+
+html_title = 'Main'
+article_previews_link_more = 'blog'
+article_previews_link_more_label = 'Більше теорії'
+article_previews_header_large = 'З нашого блогу'
+article_previews_header_large_sub = 'Тексти для звільнення тіла і розуму'

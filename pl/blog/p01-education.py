@@ -80,11 +80,11 @@ html_title = 'Edukacja jako domestykacja wewnętrznej przestrzeni'
 article = {
     'author_name': 'Layla AbdelRahim',
     'author_meta': 'Antropolożka, weganka, anarcho-prymitywistka',
-    'author_image': '../../templates/assets/blog/layla_ava.jpg',
+    'author_image': '/templates/assets/blog/layla_ava.jpg',
     'post_title': html_title,
     'post_meta': '14 listopada 2024',
     'post_content': post_content,
-    'cover': '../../templates/assets/blog/education_1.jpg',
-    'link': 'education.html',
+    'cover': '/templates/assets/blog/education_1.jpg',
+    'link': 'p01-education.html',
     'excerpt': "Uważa się, że szkoła daje wiedzę o rzeczywistości. W rzeczywistości, jak twierdzi Layla AbdelRahim, edukacja szkolna wręcz alienuje dzieci od życia: przygotowuje je do uczestnictwa w projekcie kolonizacji środowiska, do apatii, która pozwala bezboleśnie konsumować życie innych, nie rozumiejąc ich bólu i nie reagując na niego.",
 }

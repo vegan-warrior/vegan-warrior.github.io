@@ -48,11 +48,11 @@ html_title = 'Healthy Vegan Diet: Basics'
 article = {
     'author_name': 'Nastya Lisitsa',
     'author_meta': 'Certified Nutritionist, Advocate of Evidence-Based Nutrition',
-    'author_image': '../../templates/assets/blog/waffledeer_ava.jpg',
+    'author_image': '/templates/assets/blog/waffledeer_ava.jpg',
     'post_title': html_title,
     'post_meta': 'November 12, 2024',
     'post_content': post_content,
-    'cover': '../../templates/assets/blog/perehod_1.jpg',
-    'link': 'transition.html',
+    'cover': '/templates/assets/blog/perehod_1.jpg',
+    'link': 'p00-transition.html',
     'excerpt': "Switching to a new diet is a significant decision. Whether veganism becomes the best choice of your life or ends up being a disappointment depends on how well you understand the foundational principles.",
 }

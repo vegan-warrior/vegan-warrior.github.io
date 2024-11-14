@@ -43,3 +43,9 @@ contact = {
     'follow_us': 'Follow us',
     'donations': 'Donations',
 }
+
+html_title = 'Main'
+article_previews_link_more = 'blog'
+article_previews_link_more_label = 'More theory'
+article_previews_header_large = 'From our blog'
+article_previews_header_large_sub = 'Texts for liberating the body and mind'

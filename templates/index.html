@@ -3,5 +3,10 @@
     {% include 'blocks/landheader.html' %}
     {% include 'blocks/features.html' %}
     {% include 'blocks/testimonial.html' %}
+
+    {% set article_previews = blog_index["dirmodules"].values() | list %}
+    {% set article_previews = article_previews[-3:] %}
+    {% include 'blocks/article_previews.html' %}
+
     {% include 'blocks/contact.html' %}
 {% endblock %}

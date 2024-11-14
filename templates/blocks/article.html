@@ -3,7 +3,7 @@
     <div class="row gx-5">
         <div class="col-lg-3">
             <div class="d-flex align-items-center mt-lg-5 mb-4">
-                {% if ar.author_image %}<img class="img-fluid rounded-circle" src="{{ ar.author_image }}" width="50"/>{% endif %}
+                {% if ar.author_image %}<img class="img-fluid rounded-circle" src="{{ parenting }}{{ ar.author_image }}" width="50"/>{% endif %}
                 <div class="ms-3">
                     {% if ar.author_name %}<div class="fw-bold">{{ ar.author_name }}</div>{% endif %}
                     {% if ar.author_meta %}<div class="text-muted">{{ ar.author_meta }}</div>{% endif %}
@@ -17,7 +17,7 @@
                     {% if ar.post_meta %}<div class="text-muted fst-italic mb-2">{{ ar.post_meta }}</div>{% endif %}
                 </header>
                 <section class="mb-4"><i>{{ ar.excerpt|markdown|safe }}</i></section>
-                <section class="mb-4">{% if ar.cover %}<img src="{{ ar.cover }}" width="100%"/>{% endif %}</section>
+                <section class="mb-4">{% if ar.cover %}<img src="{{ parenting }}{{ ar.cover }}" width="100%"/>{% endif %}</section>
                 <section class="mb-5">{{ ar.post_content|markdown|safe }}</section>
             </article>
         </div>

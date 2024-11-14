@@ -6,6 +6,7 @@ navbar_items = (
     {'label': 'Книги', 'link': '/ru/books.html'},
     {'label': 'Приложения', 'link': '/ru/apps.html'},
     {'label': 'Статистика', 'link': '/ru/stat.html'},
+    {'label': 'Блог', 'link': '/ru/blog'},
 )
 
 lang_current = 'Русский'

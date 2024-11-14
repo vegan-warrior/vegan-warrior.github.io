@@ -80,11 +80,11 @@ html_title = 'Education as the Domestication of Inner Space'
 article = {
     'author_name': 'Layla AbdelRahim',
     'author_meta': 'Anthropologist, vegan, anarcho-primitivist',
-    'author_image': '../../templates/assets/blog/layla_ava.jpg',
+    'author_image': '/templates/assets/blog/layla_ava.jpg',
     'post_title': html_title,
     'post_meta': 'November 14, 2024',
     'post_content': post_content,
-    'cover': '../../templates/assets/blog/education_1.jpg',
-    'link': 'education.html',
+    'cover': '/templates/assets/blog/education_1.jpg',
+    'link': 'p01-education.html',
     'excerpt': "It is commonly believed that schools provide knowledge about reality. However, Layla AbdelRahim argues that formal education, in fact, alienates children from life: it prepares them to participate in the colonization of their environment, and fosters apathy that enables the consumption of others' lives without understanding or responding to their pain.",
 }
