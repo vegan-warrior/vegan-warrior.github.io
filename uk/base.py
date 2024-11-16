@@ -11,9 +11,9 @@ navbar_items = (
 
 lang_current = 'Українська'
 lang_choice = (
-    {'label': 'Polski', 'link': '../pl/'},
-    {'label': 'Русский', 'link': '../ru/'},
-    {'label': 'English', 'link': '../en/'},
+    {'label': 'Polski', 'link': '/pl/'},
+    {'label': 'Русский', 'link': '/ru/'},
+    {'label': 'English', 'link': '/en/'},
 )
 
 donation_msg = 'Допоможіть нам купити нове обладнання для наших вуличних акцій'
