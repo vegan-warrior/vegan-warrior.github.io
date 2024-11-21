@@ -1,15 +1,28 @@
-import glob
-import shutil
-from pathlib import Path
+import os
+import types
+from glob import glob
 from importlib import import_module
+from pathlib import Path
 
 import markdown
 from jinja2 import Environment, FileSystemLoader
 
-import config as CFG
+
+BASEDIR = Path(__file__).resolve().parent
+JINJAENV = Environment(loader=FileSystemLoader(BASEDIR / '_templates'))
+
+SITEMAP_BASE = '''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">{}
+</urlset>'''
+SITEMAP_URL = '''
+  <url>
+    <loc>{url}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>{priority}</priority>
+  </url>'''
 
 
-def markdown_to_html(md):
+def markdown_to_html_filter(md):
     res = markdown.markdown(md, extensions=['footnotes'])
     res = res.replace('<h1>', '<h1 class="mt-5 mb-4">')
     res = res.replace('<h2>', '<h2 class="mt-4 mb-3">')
@@ -18,26 +31,44 @@ def markdown_to_html(md):
     res = res.replace('<blockquote>', '<blockquote class="blockquote ps-3" style="border-left: solid;">')
     return res
 
+JINJAENV.filters['markdown'] = markdown_to_html_filter
 
-BASEDIR = Path(__file__).resolve().parent
-JINJAENV = Environment(loader=FileSystemLoader(BASEDIR / 'templates'))
-JINJAENV.filters['markdown'] = markdown_to_html
 
-SITEMAP_BASE_TMPL = '''<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">{}
-</urlset>'''
-SITEMAP_URL_TMPL = '''
-  <url>
-    <loc>{url}</loc>
-    <changefreq>monthly</changefreq>
-    <priority>{priority}</priority>
-  </url>'''
+def getattr_filter(obj, attr):
+    return getattr(obj, attr, None)
+
+JINJAENV.filters['getattr'] = getattr_filter
+
+
+def getattr_list_filter(obj, attrs):
+    return [getattr(obj, attr, None) for attr in attrs]
+
+JINJAENV.filters['getattrs'] = getattr_list_filter
+
+
+def format_link(link, parenting):
+    """
+    Add parenting if needed, so links work on both local and deployed env
+    """
+    if link[0] == '/':
+        return f'{parenting}{link}'
+    return link
+
+JINJAENV.filters['link'] = format_link
 
 
 def import_path(path):
+    """
+    Import py file path from '_data' dir as a module
+    """
     if path.endswith('.py'):
         path = path[:-3]
-    return import_module(path.replace('/', '.'))
+    path = path.replace('/', '.')
+
+    module = import_module('_data.' + path)
+    module.__name__ = path
+
+    return module
 
 
 def get_vars(module):
@@ -47,84 +78,130 @@ def get_vars(module):
     return {k: v for k, v in vars(module).items() if not k.startswith('_')}
 
 
-def _make_xml_url(url, priority):
+def make_xml_url(lang, tmpl_path, data_node, data_tree):
     """
-    Sitemaps generation help function
+    Generate an xml piece with the url for sitemap
     """
-    url = 'https://vegan-warrior.github.io' + url
-    xml_url = SITEMAP_URL_TMPL.format(url=url, priority=priority)
-    return xml_url
+    url = f'{data_tree.base_url}/{lang}/{tmpl_path}'
+    priority = getattr(data_node, 'priority', None) or "1.0"
+    return SITEMAP_URL.format(url=url, priority=priority)
 
 
-def make_sitemap():
+def tree_add(root, module):
     """
-    Generate sitemap.xml for each page
+    Add module to the root according to its path containing in module.__name__
     """
-    xml_urls = []
+    prev = root
 
-    for lang in CFG.languages:
-        xml_urls.append(_make_xml_url(f'/{lang}', '1.0'))
-        for page in CFG.pages:
-            if page != 'index':
-                xml_urls.append(_make_xml_url(f'/{lang}/{page}.html', '0.9'))
+    for part in module.__name__.split('.'):
+        if part == '__init__':  # special case: skip applying __init__
+            break               # to later apply its vars on prev module
+        part_module = getattr(prev, part, types.ModuleType(part))
+        setattr(prev, part, part_module)
+        prev = part_module
 
-    sitemap = SITEMAP_BASE_TMPL.format(''.join(xml_urls))
-    Path(BASEDIR / 'sitemap.xml').write_text(sitemap)
-    print(f'sitemap.xml generated: {len(xml_urls)} URLs')
+    [setattr(part_module, k, v) for k, v in get_vars(module).items()]
 
 
-def read_kwargs(lang, page, pagecfg=None):
+def read_tmpl_pathes():
     """
-    Read all the kwargs needed to render the page
+    Find all the html templates visible to end user
+    (not starting with _) in '_templates' dir
     """
-    base = import_path(f'{lang}/base')
-    kwargs = get_vars(base)
-    pagecfg = pagecfg or {}
+    os.chdir(BASEDIR / '_templates')
+
+    pathes = []
+    for path in glob('**/*.html', recursive=True):
+        if not path.startswith('_') and path.split('/')[-1][0].isalpha():
+            pathes.append(path)
+
+    return pathes
+
+
+def read_data_tree():
+    """
+    Import all the py files from '_data' dir into a tree module structure
+    """
+    os.chdir(BASEDIR / '_data')
 
     try:
-        module = import_path(f'{lang}/{page}')
-        kwargs = {**kwargs, **get_vars(module)}
-    except ModuleNotFoundError as exc:
-        print('    ', exc)
+        root = import_path('__init__.py')
+    except ModuleNotFoundError:
+        root = types.ModuleType('__init__')
 
-    # if import_dirmodules enabled, import neighbour modules under 'dirmodules' name
-    if pagecfg.get('import_dirmodules'):
-        dirmodules = {}
-        for path in sorted(glob.glob(lang + '/' + '/'.join(page.split('/')[:-1]) + '/*.py')):
-            if path != f'{lang}/{page}.py':
-                dirmodules[path[:-3].split('/')[-1]] = import_path(path)
-        kwargs['dirmodules'] = dirmodules
+    pathes = glob('**/*.py', recursive=True)
+    try:
+        del pathes[pathes.index('__init__.py')]
+    except ValueError:
+        pass
 
-    # if read_other_modules_kwargs enabled, import specified modules under the specified names
-    if others := pagecfg.get('read_other_modules_kwargs'):
-        for other_name, other_path in others.items():
-            kwargs[other_name] = read_kwargs(lang, other_path, pagecfg=CFG.pages[other_path])
+    for path in pathes:
+        module = import_path(path)
+        tree_add(root, module)
 
-    return kwargs
+    return root
 
 
-def render(page, kwargs):
-    template = JINJAENV.get_template(f'{page}.html')
-    return template.render(**kwargs)
-
-
-def render_pages():
+def get_langs_data(data_tree):
     """
-    Find and render all the pages
+    Extract lang modules to dict, to iterate over them
     """
-    for lang in CFG.languages:
-        dirpath = BASEDIR / lang
-        dirpath.mkdir(parents=True, exist_ok=True)
+    os.chdir(BASEDIR / '_data')
+    res = {}
 
-        for page, pagecfg in CFG.pages.items():
-            path = Path(dirpath / f'{page}.html')
-            path.parent.mkdir(parents=True, exist_ok=True)
-            kwargs = read_kwargs(lang, page, pagecfg=pagecfg)
+    for item in glob('*'):
+        if not item.startswith('_') and os.path.isdir(item):
+            res[item] = getattr(data_tree, item)
 
-            print('Render', lang, page)
-            path.write_text(render(page, kwargs))
+    return res
+
+
+def find_data_node(lang, tmpl_path, data_tree):
+    """
+    Find a node in data tree according to language and template path provided
+    """
+    node = getattr(data_tree, lang, None)
+
+    for part in tmpl_path[:-5].split('/'):
+        if node:
+            node = getattr(node, part, None)
+
+    return node
+
+
+def render(tmpl_path, lang, data_node, langs_dict, data_tree):
+    kwargs = {
+        'DATA': data_tree,
+        'LANG': langs_dict[lang],
+        'LANG_DIR': lang,
+        'LANGS': langs_dict,
+        'PARENTING': '/'.join(['..'] * (tmpl_path.count('/') + 1)),
+        **get_vars(data_node),
+    }
+    html = JINJAENV.get_template(tmpl_path).render(**kwargs)
+
+    path = Path(BASEDIR / lang / tmpl_path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(html)
+
+
+def main():
+    xml_urls = []
+    data_tree = read_data_tree()
+    langs_dict = get_langs_data(data_tree)
+
+    for tmpl_path in read_tmpl_pathes():
+        for lang in langs_dict:
+            if data_node := find_data_node(lang, tmpl_path, data_tree):
+                print('Render:', lang, tmpl_path)
+                render(tmpl_path, lang, data_node, langs_dict, data_tree)
+                xml_urls.append(make_xml_url(lang, tmpl_path, data_node, data_tree))
+            else:
+                print("  Didn't render (no matching .py file found):", lang, tmpl_path)
+
+    print(f'\nGenerate sitemap.xml: {len(xml_urls)} URLs')
+    Path(BASEDIR / 'sitemap.xml').write_text(SITEMAP_BASE.format(''.join(xml_urls)))
 
 
 if __name__ == '__main__':
-    render_pages()
-    make_sitemap()
+    main()

@@ -1,0 +1,8 @@
+{% extends '_base.html' %}
+{% block content %}
+    {% set article_preview_head = (LANG.blog | getattr(article_preview_head_name)).article %}
+    {% include '_blocks/article_preview_head.html' %}
+
+    {% set article_previews = LANG.blog | getattrs(article_preview_names) %}
+    {% include '_blocks/article_previews.html' %}
+{% endblock %}

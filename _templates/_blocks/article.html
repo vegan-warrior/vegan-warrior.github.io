@@ -1,0 +1,26 @@
+{% if article %}
+<div class="container px-4 my-4">
+    <div class="row gx-5">
+        <div class="col-lg-3">
+            <div class="d-flex align-items-center mt-lg-5 mb-4">
+                {% if article.author_image %}<img class="img-fluid rounded-circle" src="{{ article.author_image | link(PARENTING) }}" width="50"/>{% endif %}
+                <div class="ms-3">
+                    {% if article.author_name %}<div class="fw-bold">{{ article.author_name }}</div>{% endif %}
+                    {% if article.author_meta %}<div class="text-muted">{{ article.author_meta }}</div>{% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <article>
+                <header class="mb-4">
+                    <h1 class="fw-bolder mb-1">{{ article.post_title }}</h1>
+                    {% if article.post_meta %}<div class="text-muted fst-italic mb-2">{{ article.post_meta }}</div>{% endif %}
+                </header>
+                <section class="mb-4"><i>{{ article.excerpt|markdown|safe }}</i></section>
+                <section class="mb-4">{% if article.cover %}<img src="{{ article.cover | link(PARENTING) }}" width="100%"/>{% endif %}</section>
+                <section class="mb-5">{{ article.post_content|markdown|safe }}</section>
+            </article>
+        </div>
+    </div>
+</div>
+{% endif %}

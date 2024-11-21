@@ -1,0 +1,10 @@
+{% extends '_base.html' %}
+{% block content %}
+    {% include '_blocks/landheader.html' %}
+    {% include '_blocks/features.html' %}
+    {% include '_blocks/testimonial.html' %}
+
+    {% set article_previews = LANG.blog | getattrs(article_preview_names) %}
+    {% include '_blocks/article_previews.html' %}
+    {% include '_blocks/contact.html' %}
+{% endblock %}
