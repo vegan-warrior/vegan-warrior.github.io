@@ -47,6 +47,7 @@ article_previews_link_more_label = 'More theory'
 article_previews_header_large = 'From our blog'
 article_previews_header_large_sub = 'Texts for liberating the body and mind'
 article_preview_names = (
-    'education',
     'transition',
+    'education',
+    'conquest',
 )
