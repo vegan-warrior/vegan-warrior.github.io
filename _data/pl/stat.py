@@ -20,4 +20,10 @@ cards = (
      'preview': '/_media/liasy.jpg',
      'description': "Nowe badania przeprowadzone przez Union of Concerned Scientists zwracają uwagę na związek postępującej deforestacji lasów amazońskich z produkcją wołowiny i rozwojem branży mięsnej.",
     },
+    {'title': 'Biblioteka Future Food 4 Climate',
+     'subtitle': 'futurefood4climate.eu',
+     'link': 'https://futurefood4climate.eu/biblioteka/',
+     'preview': '/_media/ff4c.png',
+     'description': "Strona należy do Green REV Institute i zawiera raporty oraz publikacje dotyczące zrównoważonych systemów żywnościowych, zmian klimatycznych i polityki rolnej, emisjach metanu z hodowli zwierząt, i wiele innych.",
+    },
 )
