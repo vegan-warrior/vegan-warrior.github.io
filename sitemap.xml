@@ -101,12 +101,22 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://vegan-warrior.github.io/uk/blog/conquest.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://vegan-warrior.github.io/ru/blog/conquest.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vegan-warrior.github.io/en/blog/conquest.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vegan-warrior.github.io/pl/blog/conquest.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>

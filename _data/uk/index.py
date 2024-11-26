@@ -47,6 +47,7 @@ article_previews_link_more_label = 'Більше теорії'
 article_previews_header_large = 'З нашого блогу'
 article_previews_header_large_sub = 'Тексти для звільнення тіла і розуму'
 article_preview_names = (
-    'education',
     'transition',
+    'education',
+    'conquest',
 )

@@ -47,6 +47,7 @@ article_previews_link_more_label = 'Więcej teorii'
 article_previews_header_large = 'Z naszego bloga'
 article_previews_header_large_sub = 'Teksty uwalniające ciało i umysł'
 article_preview_names = (
-    'education',
     'transition',
+    'education',
+    'conquest',
 )
