@@ -1,4 +1,4 @@
-html_title = 'Global statistics'
+html_title = 'Statystyki globalne'
 cards_label = html_title
 card_height = 210
 cards = (
