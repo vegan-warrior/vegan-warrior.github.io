@@ -87,7 +87,7 @@ post_content = """
 
 Фактически, весь бабуин - это биологический алгоритм с собственными вычислительными мощностями.
 
-![Бабуин](../../_media/blog/nationalism_4_ru.jpeg)
+![Бабуин](../../_media/blog/nationalism_4.jpeg)
 
 А теперь следим за руками, сейчас будет фокус:
 
@@ -187,7 +187,7 @@ article = {
     'author_name': 'Lokki',
     'author_image': '/_media/blog/lokki.png',
     'post_title': html_title,
-    'post_meta': '16 март 2025',
+    'post_meta': '16 марта 2025',
     'post_content': post_content,
     'cover': '/_media/blog/nationalism.webp',
     'link': '/ru/blog/nationalism.html',
