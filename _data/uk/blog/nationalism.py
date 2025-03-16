@@ -190,6 +190,6 @@ article = {
     'post_meta': '16 березня 2025',
     'post_content': post_content,
     'cover': '/_media/blog/nationalism.webp',
-    'link': '/ru/blog/nationalism.html',
+    'link': '/uk/blog/nationalism.html',
     'excerpt': "Чому віра в націоналістичні, етнічні та інші форми шкідливих міфологем є не просто реконструкцією та історичним атавізмом, а передусім серйозною перешкодою на шляху до порятунку Життя на планеті Земля.",
 }
