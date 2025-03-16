@@ -102,7 +102,7 @@ article = {
     'author_name': 'Lokki',
     'author_image': '/_media/blog/lokki.png',
     'post_title': html_title,
-    'post_meta': '22 listopada 2024 r',
+    'post_meta': '22 listopada 2024',
     'post_content': post_content,
     'cover': '/_media/blog/conquest_1.png',
     'link': '/pl/blog/conquest.html',
