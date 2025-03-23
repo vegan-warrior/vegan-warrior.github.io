@@ -80,4 +80,10 @@ cards = (
      'preview': '/_media/bernard.jpg',
      'description': "Vegan recipes from Andrew Bernard.",
     },
+    {'title': 'Factory Farming: Cruelty for Humans, Animals and the Planet',
+     'subtitle': 'Website',
+     'link': 'https://cruelty.farm/',
+     'preview': '/_media/humane.webp',
+     'description': "Plenty of articles on how the factory farming works and what can be changed.",
+    },
 )
