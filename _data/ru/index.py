@@ -23,7 +23,7 @@ features = {
     'features': (
         {'title': 'Фильмы', 'link': 'films.html', 'icon': 'bi-film', 'description': 'Список лучших фильмов об освобождении животных'},
         {'title': 'Книги', 'link': 'books.html', 'icon': 'bi-book', 'description': 'Книги о веганстве и экологии'},
-        {'title': 'Приложения', 'link': 'apps.html', 'icon': 'bi-layout-wtf', 'description': 'Полезные приложения и сайты: карта заведений, каталоги рецептов и др.'},
+        {'title': 'Приложения', 'link': 'apps.html', 'icon': 'bi-layout-wtf', 'description': 'Полезные приложения, сайты, блоги: карта заведений, каталоги рецептов и др.'},
         {'title': 'Статистика', 'link': 'stat.html', 'icon': 'bi-bar-chart-line', 'description': 'Сельскохозяйственные и экологические данные'},
     ),
 }
