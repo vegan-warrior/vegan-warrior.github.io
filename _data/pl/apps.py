@@ -104,4 +104,10 @@ cards = (
      'preview': '/_media/juszes.jpg',
      'description': "Testy produktów wegańskich.",
     },
+    {'title': 'Wybieram zwierzęta',
+     'subtitle': 'Strona internetowa',
+     'link': 'https://wybieramzwierzeta.czarnaowca.org/',
+     'preview': '/_media/czarnaowca.jpg',
+     'description': "Kampania Fundacji Czarna Owca Pana Kota, promująca dietę roślinną jako etyczną, zdrową i ekologiczną alternatywę dla diety opartej na produktach odzwierzęcych.",
+    },
 )
