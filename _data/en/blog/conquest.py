@@ -98,8 +98,8 @@ We can chop off as many heads of the hydra of progress as we like, it will grow 
 
 html_title = 'How did humans conquer the world, and why does it matter to us?'
 article = {
-    'author_name': 'Lokki',
-    'author_image': '/_media/blog/lokki.png',
+    'author_name': 'Loki',
+    'author_image': '/_media/blog/loki.png',
     'post_title': html_title,
     'post_meta': 'November 22, 2024',
     'post_content': post_content,

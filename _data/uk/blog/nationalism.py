@@ -184,8 +184,8 @@ post_content = """
 
 html_title = 'Більше не стоїть. Націоналізм на порядку денному'
 article = {
-    'author_name': 'Lokki',
-    'author_image': '/_media/blog/lokki.png',
+    'author_name': 'Loki',
+    'author_image': '/_media/blog/loki.png',
     'post_title': html_title,
     'post_meta': '16 березня 2025',
     'post_content': post_content,

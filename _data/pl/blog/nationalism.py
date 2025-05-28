@@ -171,8 +171,8 @@ Prawie nie mamy już czasu…
 
 html_title = 'Już nie ma sensu. Nacjonalizm na agendzie'
 article = {
-    'author_name': 'Lokki',
-    'author_image': '/_media/blog/lokki.png',
+    'author_name': 'Loki',
+    'author_image': '/_media/blog/loki.png',
     'post_title': html_title,
     'post_meta': '16 marca 2025',
     'post_content': post_content,

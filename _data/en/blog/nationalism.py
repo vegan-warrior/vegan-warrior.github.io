@@ -174,8 +174,8 @@ We have almost no time left…
 
 html_title = 'Not Worth It Anymore. Nationalism on the Agenda'
 article = {
-    'author_name': 'Lokki',
-    'author_image': '/_media/blog/lokki.png',
+    'author_name': 'Loki',
+    'author_image': '/_media/blog/loki.png',
     'post_title': html_title,
     'post_meta': 'March 16, 2025',
     'post_content': post_content,

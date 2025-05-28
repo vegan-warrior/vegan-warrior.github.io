@@ -99,8 +99,8 @@ Możemy odciąć ile tylko głów hydry postępu, ona odrośnie w podwójnym i p
 
 html_title = 'Jak człowiek podbił świat i po co to nam?'
 article = {
-    'author_name': 'Lokki',
-    'author_image': '/_media/blog/lokki.png',
+    'author_name': 'Loki',
+    'author_image': '/_media/blog/loki.png',
     'post_title': html_title,
     'post_meta': '22 listopada 2024',
     'post_content': post_content,
