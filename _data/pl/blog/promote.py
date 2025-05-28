@@ -1,0 +1,46 @@
+post_content = """
+Jestem uznawany za czołowego badacza klinicznego w dziedzinie zapobiegania przemocy. Opracowałem jedyne programy, które wykazały skuteczność w zapobieganiu i zakończeniu przemocy domowej wśród żołnierzy, i programy te wkrótce zostaną wdrożone w szpitalach w całym kraju. Konsultowałem się z Organizacją Narodów Zjednoczonych na temat sposobów zakończenia przemocy w krajach ogarniętych wojną i otrzymałem międzynarodowe nagrody za swoją pracę. Obecnie piszę również książkę dla Amerykańskiego Towarzystwa Psychologicznego, koncentrującą się na traumie i zapobieganiu przemocy.
+
+Wspominam o tych osiągnięciach, aby zasugerować, że wiem coś na temat tego, jak zakończyć niepotrzebną przemoc. W rzeczywistości istnieje ogromna baza wiedzy na temat wprowadzania zmian wśród osób niezmotywowanych, która została w dużej mierze zignorowana przez wielu obrońców praw zwierząt.
+
+Przedstawiam swoją perspektywę na temat zmiany problematycznych, przemocowych zachowań, opierając się na moim doświadczeniu w zapobieganiu przemocy, a także dlatego, że łączy się to z naszymi działaniami na rzecz promowania nieagresji wobec zwierząt. Mam pewne spostrzeżenia na temat tego, jak dochodzi do zmiany zachowań w grupach uznawanych za „oporne na zmiany”, ponieważ codziennie obserwuję głębokie przemiany w mojej pracy klinicznej — i chcę omówić, jak może to znaleźć zastosowanie w naszych wysiłkach na rzecz szerzenia weganizmu.
+
+Organizacje działające na rzecz zwierząt wkładają wiele wysiłku w docieranie do osób niewegańskich, zachęcając je bezmięsnymi alternatywami, promując kampanie takie jak „Bezmięsny Poniedziałek” czy ograniczanie spożycia mięsa — ale pomijają najważniejszy element każdej strategii zmiany zachowania: jasno określony cel końcowy. Zaskakujące jest, jak rzadko weganizm jest wyraźnie wskazywany jako cel działań w ramach rzecznictwa na rzecz zwierząt. Jak możemy oczekiwać, że ludzie masowo przejdą na weganizm i zminimalizują wszelkie formy przemocy wobec zwierząt, skoro tak rzadko jest to rzeczywistym celem inicjatyw mających zmieniać zachowanie? Będzie nam bardzo trudno „przechytrzyć” ludzi, by zostali weganami, sugerując jedynie ograniczenie mięsa czy oferując smaczne dania roślinne — a taka metoda prawdopodobnie nie przyniesie trwałych, mierzalnych efektów. Jeśli chcemy zakończyć niepotrzebną przemoc wobec zwierząt i traktujemy to jako kwestię sprawiedliwości społecznej, to weganizm powinien być celem, którego bronimy bez przeprosin.
+
+W żadnej innej metodzie zmiany zachowania (ani też w żadnym ruchu na rzecz sprawiedliwości społecznej) nie występuje tak wyraźny brak jasno określonego celu. Gdybym sugerował moim pacjentom, że wystarczy, by jedynie ograniczyli przemoc wobec kobiet albo stosowali mniej strategii przemocy — i że to już jest cel godny pochwały — wyrządziłbym ogromną krzywdę ofiarom i powinienem zostać pozbawiony pracy. Nie — kiedy pracuję z osobami stosującymi przemoc i nadużycia, od początku jasno stawiam sprawę: celem naszego programu jest całkowite zaprzestanie wszelkich form przemocy. I robię to w sposób akceptowalny dla osób, z którymi pracuję. Jeszcze raz: jeśli chcemy, aby dane zachowanie uległo zmianie i by przemoc została ostatecznie zakończona, a osoby poszkodowane otrzymały pomoc — musimy jasno określić, jakie to zachowanie i dlaczego musi się zmienić.
+
+Wielu indywidualnych obrońców zwierząt oraz organizacji obawia się promowania weganizmu jako celu końcowego, ponieważ uważa, że jeśli będą zbyt „natarczywi”, całkowicie zniechęcą ludzi. To prawdopodobnie jeden z głównych powodów, dla których nie nastąpiła szersza zmiana kulturowa w kierunku weganizmu. Tymczasem możliwe jest jednoczesne: jasno wyznaczyć cel zakończenia przemocy wobec zwierząt ORAZ współpracować z osobami niewegańskimi w sposób produktywny i nieagresywny, aby wywołać zmianę zachowania.
+
+Doskonale rozumiem, dlaczego niektórzy obrońcy zwierząt obawiają się utraty osób niewegańskich w swoich działaniach rzeczniczych. W wielu moich wcześniejszych publikowanych badaniach klinicznych (a także w pracy doktorskiej) pokazałem, jak ważna jest relacja terapeutyczna w leczeniu sprawców przemocy domowej. Udowodniłem, że im silniejsza więź między terapeutą a pacjentem oraz im większe poczucie wspólnych celów i działań terapeutycznych, tym pacjenci są mniej agresywni po zakończeniu leczenia. Im bardziej współpracujemy i wspieramy tych, których zachowanie chcemy zmienić, tym większe zmiany możemy zaobserwować. Jednak nie oznacza to, że należy całkowicie zrezygnować z wyznaczenia jasno określonego celu takiej zmiany. Byłoby to wręcz przeciwne terapii.
+
+W każdej strategii zmiany zachowania ważne jest, aby być szczerym, bezpośrednim i jasno komunikować, co wymaga zmiany, nie oceniając przy tym i nie stawiając innych w defensywie. Tak, jest to możliwe, a tak naprawdę całkiem proste i terapeutyczne. Można okazać zrozumienie i empatię wobec tego, jak rozwinęło się problematyczne zachowanie i co je podtrzymuje, jednocześnie konsekwentnie utrzymując stanowisko, że wszelka przemoc musi się zakończyć. Te dwie rzeczy nie wykluczają się nawzajem — obie są konieczne, aby zmiana mogła nastąpić.
+
+Zauważyłem, że moi pacjenci doceniają moją autentyczność, gdy wskazuję, które konkretne zachowania są przemocowe i problematyczne. Również staram się wzmacniać pozytywne postępy, jakie robią moi pacjenci w radzeniu sobie ze złością i lepszym zarządzaniu sytuacjami, nawet jeśli nie zawsze wychodzi im to idealnie. Oczywiście, wzmacnianie pozytywnych zachowań ma większy wpływ niż skupianie się wyłącznie na karaniu zachowań negatywnych. Jednak nigdy nie wspieramy ani nie tolerujemy przemocy w żadnej formie i zawsze staramy się jasno nazywać przemoc, gdy się pojawia.
+
+Podobnie w naszej działalności na rzecz zwierząt powinniśmy promować weganizm oraz nagradzać i wzmacniać kroki zmierzające do tego celu. Ograniczanie mięsa, eliminowanie nabiału itp. to wszystkie kroki w dobrym kierunku ku weganizmowi, i jeśli chcemy promować prawdziwą zmianę, powinniśmy wspierać te postępy tak bardzo, jak tylko się da. Jednak powinny być one traktowane jako pozytywne etapy na drodze do weganizmu, a nie jako cele same w sobie.
+
+Podsumowując, z moich wieloletnich doświadczeń w zapobieganiu i kończeniu przemocy w pracy z pacjentami wyciągam dwa absolutnie kluczowe wnioski:
+
+1. Trzeba mieć jasno określony cel (zakończenie przemocy), który jest wyrażany jednoznacznie i bez przeprosin.
+
+2. Należy zachować nieagresywną postawę w promowaniu tego celu (zakończenia przemocy), zdając sobie sprawę, że dana osoba może być ambiwalentna wobec zmiany swojego zachowania, i wspierać jej kroki zmierzające do osiągnięcia tego celu.
+
+Można argumentować, że to, co skuteczne w zapobieganiu i zakończeniu przemocy interpersonalnej wobec pacjentów lub grup, nie ma zastosowania w promowaniu szeroko zakrojonej zmiany dotyczącej przemocy wobec zwierząt. Jednak populacja, z którą pracuję, ma wiele podobieństw do osób kwestionowanych w kwestii ich konsumpcji produktów zwierzęcych. Ponieważ większość z nich trafia na terapię z nakazu sądowego, często nie dostrzegają problemu w swoim zachowaniu, reagują defensywnie i złością na konfrontację oraz przedstawiają irracjonalne usprawiedliwienia dla swojego postępowania. Co więcej, podobnie jak kampanie na rzecz zwierząt i indywidualne działania rzecznicze, terapia jest formą społecznego przekonywania, a nasze przekazy w obu kontekstach są bardziej podobne niż różne. Wystarczy wyobrazić sobie kampanię przeciw przemocy domowej promującą „bezprzemocne poniedziałki” lub bardziej „humanitarną przemoc”, aby zobaczyć, jak niektóre metody perswazji stosowane w obronie zwierząt są nielogiczne z punktu widzenia zmiany zachowania czy sprawiedliwości społecznej.
+
+Zmiana zachowania opiera się na podstawowych zasadach, które mają zastosowanie do różnych problemów i populacji. Potrzebujemy jasnego celu oraz bezpośredniej, a jednocześnie wspierającej i autentycznej komunikacji. Te dwa elementy mogą i muszą iść w parze, aby osiągnąć prawdziwe, szeroko zakrojone zmniejszenie przemocy wobec zwierząt. Wraz ze wzrostem świadomości wegańskiej w społeczeństwie oraz wsparciem etyki i nauki dla weganizmu, teraz bardziej niż kiedykolwiek istnieje szansa na wprowadzenie wielkich zmian. Musimy wykorzystać tę okazję, bez wstydu zachęcając innych do przejścia na weganizm w naszych przekazach i wspierając kroki zmierzające do tego celu.
+
+[Źródło](https://veganpublishers.com/how-do-we-best-promote-veganism-a-psychologists-perspective-casey-taft-ph-d/)
+"""
+
+html_title = 'Jak najlepiej promować weganizm? Perspektywa psychologa'
+article = {
+    'author_name': 'Casey Taft, Ph.D.',
+    'author_meta': 'Współwłaściciel Vegan Publishers i profesor psychiatrii w Boston University School of Medicine',
+    'author_image': '/_media/blog/casey-180x180.jpg',
+    'post_title': html_title,
+    'post_meta': '28 maja 2025',
+    'post_content': post_content,
+    'cover': '/_media/blog/promote.png',
+    'link': '/pl/blog/promote.html',
+    'excerpt': "Czy opowiadając się za weganizmem, powinniśmy zachęcać ludzi do pełnego przejścia na weganizm, czy też wspierać mniejsze kroki na tej drodze? Casey Taft omawia, w jaki sposób powinniśmy robić jedno i drugie.",
+}

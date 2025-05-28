@@ -1,0 +1,42 @@
+post_content = """
+I am considered a leading clinical researcher in the area of violence prevention. I have developed the only programs shown to prevent and end domestic violence in military service members and these programs are about to be employed at hospitals across the country. I have consulted with the United Nations about how to end violence in war-torn nations and received international awards for my work. I am also currently writing a book for the American Psychological Association focused on trauma and violence prevention.
+
+I mention these credentials to suggest that I know something about how to end unnecessary violence. In fact, there is a vast knowledge base in promoting change among unmotivated individuals that has been largely ignored by many advocates for animals.
+
+I offer my perspective on changing problematic violent behavior based on my background in violence prevention and because it ties into our efforts in promoting non-violence towards animals. I have some insights into how behavioral shift occurs among groups considered “resistant to change” because I observe profound change daily in my clinical work, and I want to discuss how this may apply to our work in spreading veganism.
+
+Animal advocacy groups take great pains to reach out to non-vegans by enticing them with meatless alternatives, promoting Meatless Monday campaigns and cutting down on meat, etc., but they miss the most important component of any behavior change strategy—a clearly defined end goal. It is surprising how rarely veganism is a stated goal in animal advocacy efforts. How can we expect people to go vegan on a large scale and minimize all forms of violence towards animals if it is rarely the objective of efforts intended to change behavior? We will have a very difficult time “tricking” people into going vegan by suggesting they cut down on meat or by offering tasty vegan food, and this method is likely ineffective in affecting long-term measurable change. If we want unnecessary violence towards animals to end and view this as a social justice issue, then veganism should be what we advocate for unapologetically.
+
+For no other behavior change method (or social justice movement for that matter) has there been such a lack of a clearly identified goal. If I were to suggest to my patients that a simple reduction of their violence towards women, or reliance on fewer abuse strategies, was acceptable and commendable as an end goal, I would be doing a great disservice to the victims and should lose my job. No, when I work with those who engage in violence and abuse, I make it clear at the outset that the goal of our program is to remain non-abusive in all forms and I do so in a manner that is acceptable to those I’m working with. Again, if we want to see a specific behavior changed and ultimately end the violence and help those affected, we need to be clear about what that behavior is and why it needs to change.
+
+Many individual animal advocates and organizations fear promoting veganism as an end goal because they feel that if they’re too “pushy” they will lose people altogether. This is likely a leading factor in why a larger cultural shift towards veganism has not occurred. It is in fact possible to clearly state a goal of ending violence towards animals AND working with non-vegans in a productive, non-aggressive manner to produce behavior change.
+
+I do understand why some animal advocates are concerned about losing non-vegans in their advocacy efforts. In much of my earlier published clinical research (and as the focus of my doctoral dissertation), I showed the importance of the therapeutic relationship in treating domestic violence perpetrators. I showed that the greater the bond between therapist and patient, and the greater the shared sense of goals and activities of treatment, the less violent the patients were after treatment. The more collaboratively and supportively we work with those whose behavior we want to change, the greater will be the change we see as a result. But that does not mean we fail to establish an end goal for such change altogether. Doing so would be entirely counter-therapeutic.
+
+With any behavior strategy, it’s important to be genuine, straightforward, and clear about what needs to change without judging and putting others on the defensive. Yes, this is possible and actually quite simple and therapeutic. You can show understanding and empathy for how a problem behavior developed and what upholds that behavior while maintaining a stance that all violence must end. The two are not mutually exclusive, and both are required for change to occur.
+
+I have found that my patients appreciate my authenticity when I observe how specific behaviors are abusive and problematic. I also work to reinforce positive gains my patients make in terms of handling their anger and managing situations better, even if they don’t handle things perfectly. Of course when we reinforce positive behavior, this has a stronger impact than if we just focus on punishing the negative behavior. However, we never support or condone abusive behavior in any way, and we make a point to label abuse when it occurs.
+
+Similarly, in our animal advocacy, we should promote veganism and reward and reinforce steps towards that goal. Cutting down on meat, eliminating dairy etc. are all steps in the right direction towards veganism, and if we want to promote real change, we should be supporting these gains as much as we can. But these should be viewed as positive steps towards veganism rather than ends in and of themselves.
+
+To reiterate, what I take from my experiences over several years of ending and preventing violence with my own patients is that there are two absolute keys to bringing about true change: (a) one needs to have a clear goal (ending violence) that is defined and conveyed absolutely and unapologetically, and (b) one must maintain a non-aggressive stance in promoting the end goal (ending violence), recognizing that the individual might be ambivalent about changing their behavior, and supporting steps towards that goal.
+
+One might argue that what’s effective in preventing and ending interpersonal violence with patients or groups is not relevant for promoting large-scale change regarding violence towards animals. However, the population I work with possesses many similarities to those who are challenged on their animal consumption. Since most are court-ordered to treatment, they often don’t recognize their behavior as a problem, tend to respond with defensiveness and anger when challenged, and provide irrational justifications for their behavior. Further, just like animal advocacy campaigns and individual advocacy efforts, therapy is a form of social persuasion, and our messaging across each context is more similar than different. One only needs to envision an anti-domestic violence campaign that promotes “abuse-less Mondays” or more “humane abuse” to see how some methods of persuasion used for animal advocacy are not logical from a behavior change or social justice standpoint.
+
+Behavior change follows basic principles that apply across problems and populations. We need a clear goal and straightforward yet supportive genuine communication.  The two can and must accompany one another to see genuine large-scale reductions in violence towards animals. With increasing vegan awareness in the general population and ethical and scientific reasoning all on the side of veganism, now more than ever there is an opportunity to bring about great change. We need to seize this opportunity by unashamedly encouraging others to go vegan in our messaging and supporting steps towards that goal.
+
+[Source](https://veganpublishers.com/how-do-we-best-promote-veganism-a-psychologists-perspective-casey-taft-ph-d/)
+"""
+
+html_title = 'How Do We Best Promote Veganism? A Psychologist’s Perspective'
+article = {
+    'author_name': 'Casey Taft, Ph.D.',
+    'author_meta': 'Co-owner of Vegan Publishers and Professor of Psychiatry at Boston University School of Medicine',
+    'author_image': '/_media/blog/casey-180x180.jpg',
+    'post_title': html_title,
+    'post_meta': 'May 28, 2025',
+    'post_content': post_content,
+    'cover': '/_media/blog/promote.png',
+    'link': '/en/blog/promote.html',
+    'excerpt': "When advocating for veganism, should we encourage people to go fully vegan or support smaller steps along the way? Casey Taft discusses how we should be doing both.",
+}

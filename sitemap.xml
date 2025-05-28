@@ -121,26 +121,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vegan-warrior.github.io/uk/blog/transition.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://vegan-warrior.github.io/ru/blog/transition.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://vegan-warrior.github.io/en/blog/transition.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://vegan-warrior.github.io/pl/blog/transition.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://vegan-warrior.github.io/uk/blog/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -197,6 +177,26 @@
   </url>
   <url>
     <loc>https://vegan-warrior.github.io/pl/blog/nationalism.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vegan-warrior.github.io/uk/blog/promote.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vegan-warrior.github.io/ru/blog/promote.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vegan-warrior.github.io/en/blog/promote.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vegan-warrior.github.io/pl/blog/promote.html</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
