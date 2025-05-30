@@ -86,4 +86,10 @@ cards = (
      'preview': '/_media/humane.webp',
      'description': "Plenty of articles on how the factory farming works and what can be changed.",
     },
+    {'title': 'Green Planet Films',
+     'subtitle': 'Films',
+     'link': 'https://greenplanetfilms.org/',
+     'preview': '/_media/green_planet_films.png',
+     'description': "Non-profit distributor created to promote environmental education through the artistic power of film.",
+    },
 )

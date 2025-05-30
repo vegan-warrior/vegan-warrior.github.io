@@ -23,7 +23,7 @@ features = {
     'features': (
         {'title': 'Films', 'link': 'films.html', 'icon': 'bi-film', 'description': 'Curated list of the best films about animal liberation'},
         {'title': 'Books', 'link': 'books.html', 'icon': 'bi-book', 'description': 'Best books about veganism and environment'},
-        {'title': 'Recipes and other apps', 'link': 'apps.html', 'icon': 'bi-layout-wtf', 'description': 'Useful applications and websites, like restaurants locator or a recipes catalog'},
+        {'title': 'Apps and links', 'link': 'apps.html', 'icon': 'bi-layout-wtf', 'description': 'Useful applications and websites, like restaurants locator or a recipes catalog'},
         {'title': 'Statistics', 'link': 'stat.html', 'icon': 'bi-bar-chart-line', 'description': 'Agriculture and ecological data'},
     ),
 }
