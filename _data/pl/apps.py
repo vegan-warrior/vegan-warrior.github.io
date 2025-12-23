@@ -110,4 +110,10 @@ cards = (
      'preview': '/_media/czarnaowca.jpg',
      'description': "Kampania Fundacji Czarna Owca Pana Kota, promująca dietę roślinną jako etyczną, zdrową i ekologiczną alternatywę dla diety opartej na produktach odzwierzęcych.",
     },
+    {'title': 'Wegańskie przepisy dla małych i dużych',
+     'subtitle': 'Przepisy, Blog',
+     'link': 'https://veganbanda.pl/',
+     'preview': '/_media/banda.png',
+     'description': "Wegański blog kulinarny, na którym znajdziecie pomysły na zdrowe dania i desery dla smakoszy i niejadków bez ograniczeń wiekowych, także tych najmłodszych.",
+    },
 )
