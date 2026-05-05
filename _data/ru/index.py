@@ -47,7 +47,9 @@ article_previews_link_more_label = 'Больше теории'
 article_previews_header_large = 'Из нашего блога'
 article_previews_header_large_sub = 'Тексты для освобождения тела и разума'
 article_preview_names = (
+    'gametes',
     'promote',
-    'education',
+    'nationalism',
     'conquest',
+    'education',
 )

@@ -93,7 +93,7 @@ Taktyka sztuki sabotażu względem mitologem dużych wspólnot - nie mniej zabó
 
 Możemy odciąć ile tylko głów hydry postępu, ona odrośnie w podwójnym i potrójnym liczbie. Ale mamy przynajmniej szansę, by spróbować uderzyć w istotę postępu i dominacji - w mity zjednoczonego ludzkości.
 
-**Niech żyje Chaos i dezintegracja jako jedyna droga do wyzwolenia!..**
+**Niech żyje Chaos i dezintegracja jako jedyna droga do wyzwolenia!**
 
 """
 

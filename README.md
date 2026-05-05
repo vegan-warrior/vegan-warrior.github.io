@@ -8,8 +8,13 @@
 ## How to build
 
 1. Change html files in `_templates/` or py files in `_data/{language}/`
-1. Run `python build.py`
-1. Check, commit, push
+1. Run `python build.py`, check, commit, push
+
+## How to add new page
+
+1. Add html file to `_templates/`
+1. Add py file to `_data/{language}/`
+1. Run `python build.py`, check, commit, push
 
 ## Design
 
