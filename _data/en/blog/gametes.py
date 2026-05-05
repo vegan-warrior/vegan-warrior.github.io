@@ -53,6 +53,6 @@ article = {
     'post_meta': 'April 5, 2026',
     'post_content': post_content,
     'cover': '/_media/blog/gametes.webp',
-    'link': '/ru/blog/gametes.html',
+    'link': '/en/blog/gametes.html',
     'excerpt': "At the dawn of sexual reproduction, all gametes were equal and invested in offspring identically. Then some started cheating. Let's unpack how biology makes the case for feminism better than any manifesto.",
 }

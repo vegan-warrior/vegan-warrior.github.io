@@ -53,6 +53,6 @@ article = {
     'post_meta': '5 квітня, 2026',
     'post_content': post_content,
     'cover': '/_media/blog/gametes.webp',
-    'link': '/ru/blog/gametes.html',
+    'link': '/uk/blog/gametes.html',
     'excerpt': "На зорі статевого розмноження всі гамети були рівними і вкладалися в потомство однаково. Потім одні почали шахраювати. Розбираємося, як біологія обґрунтовує фемінізм краще за будь-який маніфест.",
 }

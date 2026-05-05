@@ -53,6 +53,6 @@ article = {
     'post_meta': '5 kwietnia 2026',
     'post_content': post_content,
     'cover': '/_media/blog/gametes.webp',
-    'link': '/ru/blog/gametes.html',
+    'link': '/pl/blog/gametes.html',
     'excerpt': "U zarania rozmnażania płciowego wszystkie gamety były równe i jednakowo inwestowały w potomstwo. Potem niektóre zaczęły oszukiwać. Wyjaśniamy, jak biologia uzasadnia feminizm lepiej niż jakikolwiek manifest.",
 }
