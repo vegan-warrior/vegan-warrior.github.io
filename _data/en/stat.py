@@ -38,4 +38,10 @@ cards = (
      'preview': '/_media/un_guardian.png',
      'description': "Ex-officials at the Food and Agriculture Organization say its leadership censored and undermined them when they highlighted how livestock methane is a major greenhouse gas.",
     },
+    {'title': 'How many animals are killed each year worldwide',
+     'subtitle': 'animalkillstats.com',
+     'link': 'https://animalkillstats.com/',
+     'preview': '/_media/killstat.png',
+     'description': "Live statistics on how many different types of animals are killed each year",
+    },
 )
