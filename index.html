@@ -3,20 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Language Selection - Vegan Warrior Club</title>
+        <title>Vegan Warrior Club</title>
         <link rel="icon" type="image/x-icon" href="_media/favicon.ico" />
         <link href="_static/styles.css" rel="stylesheet" />
+        <link rel="alternate" hreflang="pl" href="/pl/" />
+        <link rel="alternate" hreflang="uk" href="/uk/" />
+        <link rel="alternate" hreflang="en" href="/en/" />
+        <link rel="alternate" hreflang="ru" href="/ru/" />
+        <link rel="alternate" hreflang="x-default" href="/en/" />
+        <style>
+            .lang-hint {
+                color: rgba(255, 255, 255, .45);
+                font-size: .8125rem;
+                letter-spacing: .15em;
+                text-transform: uppercase;
+            }
+            .lang-card {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem 1.25rem;
+                border: 1px solid rgba(255, 255, 255, .15);
+                border-radius: .25rem;
+                color: #fff;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            .lang-card:hover,
+            .lang-card:focus {
+                border-color: #ab45ff;
+                background-color: rgba(171, 69, 255, .15);
+                color: #fff;
+            }
+            .lang-code {
+                font-size: .75rem;
+                color: rgba(255, 255, 255, .4);
+            }
+        </style>
     </head>
-    <body>
-        <div class="container-fluid px-3">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-11 col-sm-8 col-md-6 col-lg-4 mx-auto d-grid gap-3">
-                    <img src="_media/vwc_navlogo.png" alt="Logo" class="img-fluid mb-4 w-50 mx-auto">
-                    <a href="/pl/" class="btn btn-primary btn-lg">Polski</a>
-                    <a href="/uk/" class="btn btn-primary btn-lg">Українська</a>
-                    <a href="/en/" class="btn btn-primary btn-lg">English</a>
-                    <a href="/ru/" class="btn btn-primary btn-lg">Русский</a>
-                </div>
+    <body class="bg-dark">
+        <div class="container min-vh-100 d-flex flex-column justify-content-center align-items-center py-5">
+            <img src="_media/vwc_navlogo.png" alt="Vegan Warrior Club" class="img-fluid mb-4" style="max-width: 340px;">
+            <p class="lang-hint mb-4 text-center">Wybierz język &middot; Choose your language</p>
+            <div class="row g-3 w-100" style="max-width: 34rem;">
+                <div class="col-12 col-sm-6"><a class="lang-card" href="/pl/" hreflang="pl" lang="pl">Polski <span class="lang-code">PL</span></a></div>
+                <div class="col-12 col-sm-6"><a class="lang-card" href="/uk/" hreflang="uk" lang="uk">Українська <span class="lang-code">UK</span></a></div>
+                <div class="col-12 col-sm-6"><a class="lang-card" href="/en/" hreflang="en" lang="en">English <span class="lang-code">EN</span></a></div>
+                <div class="col-12 col-sm-6"><a class="lang-card" href="/ru/" hreflang="ru" lang="ru">Русский <span class="lang-code">RU</span></a></div>
             </div>
         </div>
     </body>
